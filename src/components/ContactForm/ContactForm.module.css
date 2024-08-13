@@ -8,7 +8,6 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
 .btn {
@@ -35,4 +34,5 @@
   padding: 5px;
   height: 35px;
   width: 100%;
+  margin-bottom: 15px;
 }
