@@ -12,16 +12,16 @@ const Contact = ({name, number, id}) => {
   return (
       <div className={s.wrapper}>
           <div className={s.person}>
-              <div>
+              <div className={s.item}>
                 <IoPersonCircleOutline className={s.icon} />
                 <p>{name}</p>
               </div>
-              <div>
+              <div className={s.item}>
                 <BsTelephone className={s.icon} />
                 <p>{number}</p>
               </div>
           </div>
-          <button className={s.delBtn} type="button" onClick={() => dispatch(deleteContact(id))}>Delete</button>
+          <button className={s.delBtn} type="button" onClick={() => dispatch(deleteContact(id))}><div className={s.frame}>Delete</div></button>
     </div>
   )
 }

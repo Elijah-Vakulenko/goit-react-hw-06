@@ -1,0 +1,24 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  grid-template-areas:
+    "title title"
+    "form list"
+    "search list";
+  grid-gap: 20px;
+}
+
+.logo {
+  padding: 20px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  grid-area: title;
+  justify-self: center;
+}
+
+.icon {
+  font-size: 50px;
+  width: 50px;
+  height: 50px;
+}
